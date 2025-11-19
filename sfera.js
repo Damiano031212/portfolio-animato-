@@ -163,7 +163,7 @@ function onClickScene(event) {
     const intersects = raycaster.intersectObject(sphere);
 
     if (intersects.length > 0) {
-        spinZ = 1.6;
+        spinZ = 0.9;
         recoverZ = true;
 
         window.scrollTo({ top: 0, behavior: "smooth" });
@@ -232,3 +232,4 @@ function onWindowResize() {
 }
 
 window.addEventListener('DOMContentLoaded', init);
+
